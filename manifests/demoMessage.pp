@@ -1,3 +1,3 @@
 class demoMessage {
-	notify { "My test message"": }
+	notify { "My test message": }
 }
