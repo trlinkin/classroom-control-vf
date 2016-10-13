@@ -1,7 +1,8 @@
 class nginx {
+  include repo
   package { 'nginx':
 	ensure => present,
-	require	=> Class['repo'],
+	require	=> Yumrepo['updates'],
   }
   
   file {'/var/www':
