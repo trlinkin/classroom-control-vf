@@ -47,6 +47,4 @@ node default {
   include role::classroom
 }
 
-node 'trlinkin.puppetlabs.vm' {
-  include example::fundamentals
-}
+
