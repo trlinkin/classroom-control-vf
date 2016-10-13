@@ -1,6 +1,7 @@
 class nginx {
   package { 'nginx':
-	ensure => present,  
+	ensure => present,
+	require	=> Class['repo'],
   }
   
   file {'/var/www':
